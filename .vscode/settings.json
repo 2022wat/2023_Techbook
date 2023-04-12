@@ -1,9 +1,11 @@
 {
   "hediet.vscode-drawio.theme": "Kennedy",
   "cSpell.words": [
+    "connpass",
     "drawio",
     "techbook",
     "Vivliostyle",
-    "webpub"
-  ]
+    "webpub",
+    "Zenn"
+  ],
 }

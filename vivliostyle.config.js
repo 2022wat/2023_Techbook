@@ -13,41 +13,43 @@ module.exports = {
       title: "目次"
     },
 
-    // 第1部
-    {
-      // 第1部の扉ページ
-      path: "01_title/index.md",
-      // path: "01_title/index.html", // htmlファイルを使用する場合
-      title: "第1部 タイトル"
-    },
-    // 以下、第1部が続く
-    "01_title/01.md",
-    "01_title/02.md",
-    "01_title/03.md",
+    "01/01.md",
+    "02/01.md",
+    // // 第1部
+    // {
+    //   // 第1部の扉ページ
+    //   path: "01_title/index.md",
+    //   // path: "01_title/index.html", // htmlファイルを使用する場合
+    //   title: "第1部 タイトル"
+    // },
+    // // 以下、第1部が続く
+    // "01_title/01.md",
+    // "01_title/02.md",
+    // "01_title/03.md",
 
-    // 第2部
-    {
-      // 第2部の扉ページ
-      path: "02_title/index.md",
-      // path: "02_title/index.html", // htmlファイルを使用する場合
-      title: "第2部 タイトル"
-    },
-    // 以下、第2部が続く
-    "02_title/01.md",
-    "02_title/02.md",
-    "02_title/03.md",
+    // // 第2部
+    // {
+    //   // 第2部の扉ページ
+    //   path: "02_title/index.md",
+    //   // path: "02_title/index.html", // htmlファイルを使用する場合
+    //   title: "第2部 タイトル"
+    // },
+    // // 以下、第2部が続く
+    // "02_title/01.md",
+    // "02_title/02.md",
+    // "02_title/03.md",
 
-    // 第3部
-    {
-      // 第3部の扉ページ
-      path: "03_title/index.md",
-      // path: "03_title/index.html", // htmlファイルを使用する場合
-      title: "第3部 タイトル"
-    },
-    // 以下、第3部が続く
-    "03_title/01.md",
-    "03_title/02.md",
-    "03_title/03.md",
+    // // 第3部
+    // {
+    //   // 第3部の扉ページ
+    //   path: "03_title/index.md",
+    //   // path: "03_title/index.html", // htmlファイルを使用する場合
+    //   title: "第3部 タイトル"
+    // },
+    // // 以下、第3部が続く
+    // "03_title/01.md",
+    // "03_title/02.md",
+    // "03_title/03.md",
 
     // あとがき、奥付
     "colophon.md"
