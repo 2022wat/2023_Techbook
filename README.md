@@ -6,6 +6,20 @@ nodeの環境にvoltaを使用していると自動でバージョンが定ま�
 
 > created by [create-book](https://github.com/vivliostyle/create-book).
 
+## 書き方
+
+1. まずリポジトリをクローンします
+2. `develop`からブランチを切りましょう
+   - ブランチ名は`article/howToWritingTechbook`のように`article/記事名`の形にしてくれると嬉しいです
+3. articles内にディレクトリを作りましょう
+   - このとき`howToWritingTechbook`などのように記事の内容に合ったディレクトリ名だとコンフリクトしなくて済みます……
+4. 今作ったディレクトリに`template.md`をコピーしましょう。
+   - (現在`articles/作ったディレクトリ`内にいるものとして……) `cp ../../template/template.md ./記事名.md`
+5. `vivliostyle.config.js`を書き換えましょう。
+   - `entry`内に自分のファイル名を書こう
+6. 執筆しましょう！
+   - 画像などが必要になったら自分のディレクトリ内に`assets`ディレクトリを作成してそこに画像を配置してください。(`articles/01`を参照)
+
 ## プレビューについて
 
 ターミナルで`yarn preview`を実行すると、Chromiumでのプレビューが立ち上がります。  
