@@ -14,7 +14,7 @@ module.exports = {
     },
 
     "01/01.md",
-    "02/01.md",
+    "howToIosDevelop/01.md",
     // // 第1部
     // {
     //   // 第1部の扉ページ
