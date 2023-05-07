@@ -1,6 +1,6 @@
 ---
-title: "Title"
-author: "author"
+title: "実質無料でdiscord内でちくちくことばを使うと幼女に怒られるようにした話"
+author: "せぐ"
 ---
 
 <div class="title-container">
