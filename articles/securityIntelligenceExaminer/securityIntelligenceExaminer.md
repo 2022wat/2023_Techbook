@@ -62,7 +62,7 @@ NGワードを洗い出して制定したは良いのですが、NGワードは�
 
 もちろんですが製作中は何回かテストするので、いきなり本番サーバーには入れず、自分用のテストサーバーとかに入れておいてくださいね。
 
-![こんな感じでサーバーのメンバーになってたらOK](/Users/segway/gits/2023_Techbook/articles/securityIntelligenceExaminer/assets/youjochan_join.png)
+![こんな感じでサーバーのメンバーになってたらOK](./assets/youjochan_join.png)
 
 ### 2. 環境構築
 node+tsの環境を構築します。
@@ -84,10 +84,10 @@ mkdir src && touch src/index.ts
 
 package.jsonに以下を追加
 
-```sh
+```json
 "scripts":{
   "build": "tsc",
-  "start":"ts-node src/index.ts"
+  "start": "ts-node src/index.ts"
 }
 ```
 
@@ -244,10 +244,10 @@ processes = []
 | ----------- | ------------------------------------------------------------ |
 | build       | アプリのビルド方法に関する設定を記述する。BuilderやDocker Image、Dockerfileとかを指定できる |
 | env         | 環境変数を書いておける。が、fly.tomlはgit管理下のファイルなのでトークンなどの機密情報は別途flyコマンドで設定する |
-| expermental | 実験的に設定できる様になっている機能置き場らしい。特に拘りなければ放置で良さそう |
+| experimental | 実験的に設定できる様になっている機能置き場らしい。特に拘りなければ放置で良さそう |
 | services    | アプリのポートとFly.ioのポート、サービスとのマッピングを設定する |
 
-さらなる詳細は`fly.toml`の[公式リファレンス(https://fly.io/docs/reference/configuration/)](https://fly.io/docs/reference/configuration/)を参照ください。
+さらなる詳細は`fly.toml`の[公式リファレンス](https://fly.io/docs/reference/configuration/)<span class="footnote">https://fly.io/docs/reference/configuration/</span>を参照ください。
 
 ここでやることは、「services部分を削除する」です。servicesで行っているのは先述の通りポートのマッピングですが、今回作成したアプリはWebSocket通信しかしないのでポートが開いていません。このservices部分をそのままにしておくと虚無に向かってヘルスチェックを行い、(当然ですが)通らなくてデプロイに失敗してしまいます。なので、services部分は忘れずに消しましょう。
 
@@ -357,19 +357,19 @@ Logs: https://fly.io/apps/test-censor-man/monitoring
 
 どこかテストして良い鯖でNGワードを含んだメッセージを送ってみましょう。
 
-![なんか悲しくなってくるな](/Users/segway/gits/2023_Techbook/articles/securityIntelligenceExaminer/assets/segKasu.png)
+![なんか悲しくなってくるな](./assets/segKasu.png)
 
 bot「ようじょちゃん」は沈黙を貫いていますね… flyのログを見に行きましょう。ログは[Dashboard]->[(さっき付けたアプリ名)]->[Monitoring]で見れます。
 
-![しっ、死んでる………………](/Users/segway/gits/2023_Techbook/articles/securityIntelligenceExaminer/assets/killLog.png)
+![しっ、死んでる………………](./assets/killLog.png)
 
 メモリが足りなくて死んでますね… 左側メニューの[Scale]からメモリの容量を増やしましょう。
 
-![最初は256MBで、512MBでも足りなかったので1GBにしました](/Users/segway/gits/2023_Techbook/articles/securityIntelligenceExaminer/assets/scale.png)
+![最初は256MBで、512MBでも足りなかったので1GBにしました](./assets/scale.png)
 
 こうしてScale Nowを押すと…
 
-![思いの外幼女に怒られてる感が出てたのでつい謝ってしまった](/Users/segway/gits/2023_Techbook/articles/securityIntelligenceExaminer/assets/dekita.png)
+![思いの外幼女に怒られてる感が出てたのでつい謝ってしまった](./assets/dekita.png)
 
 出来ました！手塩にかけて育てたからかなんかめちゃくちゃ可愛く見えます。
 
