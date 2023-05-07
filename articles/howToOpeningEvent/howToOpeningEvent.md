@@ -125,7 +125,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 
 
-![こんな感じで出欠状況を見ることができる](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230506212051955.png)
+![こんな感じで出欠状況を見ることができる](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230506212051955.png)
 
 参加者が決まっていない場合は参加者が集まりやすそうな日時に設定すると参加者が集まりやすいと思います。例えば、土日や平日の19:00以降などが挙げられます。特に土日にすると技術系の大学生なども集まりやすいかもしれません。<span class="footnote">少なくとも私の平日は大学の講義/研究や生きるためのバイト、レポートなどの課題をこなした上で趣味開発をしていたため土日のイベントのほうが参加しやすかったです。このへんは人によります。</span>
 
@@ -164,7 +164,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 イベント名が思い浮かばなければ、他の運営メンバーや、身近な人に聞いてみると良いと思います。一人で抱え込むようなものではないですし、色んな人に聞くといろんなアイデアが出てきて面白いですよ！[ChatGPT (https://chat.openai.com/)](https://chat.openai.com)に聞いてみるのも手かも？
 
-![コンセプトを伝えてそれっぽいイベント名を生成してもらった結果](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230506225954390.png)
+![コンセプトを伝えてそれっぽいイベント名を生成してもらった結果](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230506225954390.png)
 
 #### イベント名を考えてみよう！
 
@@ -174,7 +174,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 マインドマップのrootに「イベント名」と書き、コンセプトをマインドマップの第一レベルに書いていきましょう。
 
-![コンセプトを書いてみた](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230506233950535.png)
+![コンセプトを書いてみた](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230506233950535.png)
 
 <hr class="page-wrap" />
 
@@ -182,7 +182,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 コンセプトから連想される単語をつなげてみましょう。先の例では「学生エンジニア」という単語から「Study」や「大学生」という単語が連想されます。
 
-![連想される単語を書き出してみた](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230506234522774.png)
+![連想される単語を書き出してみた](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230506234522774.png)
 
 ##### 3. 単語をかけ合わせてみよう
 
@@ -208,7 +208,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 - WordやPowerPointなどのOffice系ソフトウェア
 - FigmaなどのWebデザインソフト
 
-![PowerPointでもこのようにロゴを作ることができる](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230506223401948.png)
+![PowerPointでもこのようにロゴを作ることができる](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230506223401948.png)
 
 <hr class="page-wrap" />
 
@@ -222,33 +222,33 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 必要な文字をとりあえずキャンパスに出していきましょう。このとき、面倒くさくとも1文字ずつにしておくと配置のときに楽になります。
 
-![めちゃくちゃ雑に必要な文字を置いていく……](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507002522985.png)
+![めちゃくちゃ雑に必要な文字を置いていく……](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507002522985.png)
 
 ##### 2. ざっくり配置していこう！
 
 必要な文字をざっくり配置していきましょう！ここで、単語を構成する文字どうしをグループ化しておくと楽に配置することができます。
 
-![単語を構成する文字をグループ化しておくと配置が楽になる](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507003444799.png)
+![単語を構成する文字をグループ化しておくと配置が楽になる](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507003444799.png)
 
 これはちょっとした知見ですが、文字を斜体にした上に文字列全体を画像のように傾けると、なんかそれっぽくちょっといい感じになります。ぜひ参考にしてみてください。
 
-![必要な文字をざっくり配置した図](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507002411569.png)
+![必要な文字をざっくり配置した図](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507002411569.png)
 
 ##### 3. フォントを変更しよう！
 
 日本語フォントには大きく分けて「明朝体」「ゴシック体」があります。<span class="footnote">ほかにも「筆文字」など色々ありますが今回は明朝体とゴシック体に絞って話を進めていきます。</span>明朝体とゴシック体で人に与える印象は異なります。めちゃくちゃ簡単にまとめてみました。<span class="footnote">参考: [https://www.togu.co.jp/column/detail/120](https://www.togu.co.jp/column/detail/120)</span>
 
-![明朝体とゴシック体が与える印象](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507011636896.png)
+![明朝体とゴシック体が与える印象](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507011636896.png)
 
 実際に選択すべきフォントを誤ってしまうと、下の画像のようにお買い得品なのに高そうに見えてしまったり、逆に高級品なのにお安く見えてしまったりします。
 
-![選択すべきフォントを誤った例](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507165339538.png)
+![選択すべきフォントを誤った例](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507165339538.png)
 
 このフォントの選択はとても大事で、例えば明朝体の細字でロゴを組み立ててしまった場合、相当うまくデザインしないと初心者お断り感が出てしまいます。逆に極太ゴシック体でデザインすると「気軽に入れそう！」という印象を与えることができます。標準の細いゴシック体はモダンでシンプルな印象を与えることができるので、イベントによってはこのままでも全然問題ないと思います。スッキリしていて見やすいですし。
 
 今回は"Grow UP LT"の部分をHelvetica Neue Bold Italic, "2023"の部分をHelvetica Neue Italicにしました。
 
-![フォントを変更してみた](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507015603936.png)
+![フォントを変更してみた](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507015603936.png)
 
 <hr class="page-wrap" />
 
@@ -260,27 +260,27 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 ここからは私の好き嫌いな話になってくるのですが、個人的に気になるところを描いてみました。特に下の余白が気になります……。
 
-![下側がスッカスカな印象……](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/export.png)
+![下側がスッカスカな印象……](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/export.png)
 
 まず、下の「気になる余白」と書いてあるところを三角で埋めてしまいます。
 
-![三角で余白を埋めちゃう……！！](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507022421671.png)
+![三角で余白を埋めちゃう……！！](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507022421671.png)
 
 とりあえずは一旦これでよしとします。この三角の部分がのっぺりしてしまうので、主催グループの名前とかを書いてみると良いかもしれません。下に載せてみた例を示しますが、今回は特に何もせずに進めます。
 
-![三角のところに主催のロゴとかを置いてもいいかもね](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507022916618.png)
+![三角のところに主催のロゴとかを置いてもいいかもね](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507022916618.png)
 
 色を塗っていきます。なるべく黒(`#000000`)や赤(`#FF0000`)緑(`#00FF00`)青(`#0000FF`)などの原色は避けましょう。色が強すぎて目がチカチカしてしまいます。
 
 今回の例では、初心者向けということで、初心者マークの色である緑と黄色を明るい感じで使っていきましょう。黒のベタ塗りをなくすために、グレー(ここでは`#545454`)を使っていきます。三角の部分を緑や黄色一色でベタ塗りしてしまうとのっぺりするので、グラデーションを使っていきます。Growの部分も下の三角に合わせてグラデーションにしてしまいましょう。
 
-![色塗りした例(PDF版で見てね)](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507023520281.png)
+![色塗りした例(PDF版で見てね)](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507023520281.png)
 
 後は小物を追加したり、ちょっとした装飾を加えていきます。そうですね……Pの隣、2023の上辺りに小さい初心者マークを置いて、Uを上向きの矢印にしてしまいましょう！
 
 
 
-![こんな感じで作ってみた！](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507023936069.png)
+![こんな感じで作ってみた！](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507023936069.png)
 
 このように作ってみました。あとは文字詰めなどを適切にすると良いと思います。
 
@@ -428,7 +428,7 @@ GoogleFormは入力した問題文に応じていい感じの選択肢に変化�
 
 
 
-![イベント開催時に使用したアンケート](/Users/kazuki19992/gits/2023_Techbook/articles/01/assets/image-20230507040637411.png)
+![イベント開催時に使用したアンケート](/Users/kazuki19992/gits/2023_Techbook/articles/howToOpeningEvent/assets/image-20230507040637411.png)
 
 最後に答えてくれた人へのお礼のコメントも忘れずに書いておきましょう。
 
