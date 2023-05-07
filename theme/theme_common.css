@@ -12,9 +12,11 @@
  * @author ocodia
  */
 
-@import url('http://fonts.googleapis.com/earlyaccess/notosansjp.css');
+/* @import url('http://fonts.googleapis.com/earlyaccess/notosansjp.css'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 
 code[class*='language-'],
 pre[class*='language-'] {
@@ -168,6 +170,7 @@ h5,
 h6 {
   font-family: 'Roboto', 'Noto Sans JP', 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
     'Hiragino Sans', sans-serif;
+  font-weight: 700;
 }
 
 h2 {
