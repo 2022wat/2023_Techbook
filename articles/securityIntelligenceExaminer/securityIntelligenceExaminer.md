@@ -71,7 +71,7 @@ yarn init -y
 ```
 
 ```sh
-yarn add -D typescript @types/node ts-node @types/express
+yarn add -D typescript @types/node ts-node
 ```
 
 ```sh
