@@ -16,6 +16,7 @@ module.exports = {
     "howToOpeningEvent/howToOpeningEvent.md",
     "howToIosDevelop/01.md",
     "securityIntelligenceExaminer/securityIntelligenceExaminer.md",
+    "Muranaka/01.md",
 
     // あとがき、奥付
     "colophon.md"
