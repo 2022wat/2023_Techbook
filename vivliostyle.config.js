@@ -15,6 +15,7 @@ module.exports = {
 
     "howToOpeningEvent/howToOpeningEvent.md",
     "howToIosDevelop/01.md",
+    "securityIntelligenceExaminer/securityIntelligenceExaminer.md",
     "Muranaka/01.md",
     // // 第1部
     // {
