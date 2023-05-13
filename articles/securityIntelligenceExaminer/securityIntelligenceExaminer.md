@@ -58,7 +58,7 @@ NGワードを洗い出して制定したは良いのですが、NGワードは�
 
 ### 1. Discord側でbotを作成し、テストサーバーに参加させておく
 
-[DiscordのDeveloper Portal(https://discord.com/developers/applications)](https://discord.com/developers/applications)からbotを作成できます。詳しい操作は今後discordのアップデートでやり方が変わる可能性がありますので、インターネットで「discord bot 作成」とかで検索して最新のやり方を確認してください。作成したらbotのトークンを発行し、どこかにメモしておいてください。また、サーバーに参加させる時に適切な権限を与えないと動けないので、何が必要かよく確認した上で参加させてください。(なお筆者はうーん自作botやしAdmin！wみたいな感じで適当にやっていますが自己責任です)
+[DiscordのDeveloper Portal](https://discord.com/developers/applications)<span class="footnote">https://discord.com/developers/applications</span>からbotを作成できます。詳しい操作は今後discordのアップデートでやり方が変わる可能性がありますので、インターネットで「discord bot 作成」とかで検索して最新のやり方を確認してください。作成したらbotのトークンを発行し、どこかにメモしておいてください。また、サーバーに参加させる時に適切な権限を与えないと動けないので、何が必要かよく確認した上で参加させてください。(なお筆者はうーん自作botやしAdmin！wみたいな感じで適当にやっていますが自己責任です)
 
 もちろんですが製作中は何回かテストするので、いきなり本番サーバーには入れず、自分用のテストサーバーとかに入れておいてくださいね。
 
@@ -99,7 +99,7 @@ yarn add ts-node dotenv discord.js kuromoji @types/kuromoji
 
 これで`yarn start`すれば`src/index.ts`が実行されるようになりました！
 
-あと[gitignore.io(https://www.toptal.com/developers/gitignore/)](https://www.toptal.com/developers/gitignore/)で.gitignoreファイルも作りました。
+あと[gitignore.io](https://www.toptal.com/developers/gitignore/)<span class="footnote">https://www.toptal.com/developers/gitignore/</span>で.gitignoreファイルも作りました。
 
 ### 3. Discord.jsを使用してメッセージ送信イベントのリスナーを設定する
 index.ts内にこんな感じで書いていきましょう。
