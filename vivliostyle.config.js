@@ -8,8 +8,8 @@ module.exports = {
   entry: [
     {
       // 扉ページ
-      path: "index.md",
-      // path: "index.html", // htmlファイルを使用する場合
+      // path: "index.md",
+      path: "index.html", // htmlファイルを使用する場合
       title: "目次"
     },
 

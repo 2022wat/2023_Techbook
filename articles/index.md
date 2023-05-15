@@ -1,3 +1,9 @@
+消すページ
+<hr class="page-wrap" />
+
+
 # index
 
-これは全体的な扉ページ
+
+
+<hr class="page-wrap" />
