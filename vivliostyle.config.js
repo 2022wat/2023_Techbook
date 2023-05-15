@@ -19,7 +19,7 @@ module.exports = {
     "Muranaka/01.md",
 
     // あとがき、奥付
-    "colophon.md"
+    "colophon.html"
   ],
   output: [
     './dist/output.pdf',
