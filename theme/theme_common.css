@@ -151,7 +151,7 @@ pre[class*='language-'] {
 }
 
 :root {
-  font-family: 'Noto Serif JP';
+  font-family: 'BIZ UDPShinMGo Light', 'Noto Serif JP';
   font-weight: 400;
   line-height: 1.7;
 }
@@ -168,7 +168,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', 'Noto Sans JP', 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
+  font-family: 'BIZ UDPShinGo Medium', 'Roboto', 'Noto Sans JP', 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
     'Hiragino Sans', sans-serif;
   font-weight: 700;
 }
@@ -512,7 +512,7 @@ ol.cite-items li::before {
   }
 }
 @page :left {
-  font-family: 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
+  font-family: 'BIZ UDPShinGo Medium','Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
     'Hiragino Sans', sans-serif;
   margin-left: 18mm;
   margin-right: 35mm;
@@ -530,7 +530,7 @@ ol.cite-items li::before {
   }
 }
 @page :right {
-  font-family: 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
+  font-family: 'BIZ UDPShinGo Medium','Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
     'Hiragino Sans', sans-serif;
   margin-left: 35mm;
   margin-right: 18mm;
@@ -627,7 +627,7 @@ hr.page-wrap {
   margin-left: 0.5rem;
 }
 .author-name {
-  font-weight: 700;
+  font-family: "BIZ UDPShinMGo Medium";
   font-size: 1.25rem;
   line-height: 1.75rem;
   display: block;
