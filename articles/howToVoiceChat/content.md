@@ -1,6 +1,6 @@
 ---
 title: "のんのんChatGPTびより"
-author: "たーりょう"
+author: "たーりょー"
 ---
 
 <div class="title-container">
@@ -11,78 +11,100 @@ author: "たーりょう"
   <div className="author-wrapper">
       <!-- 下の画像URLを自分のアイコン画像にすること -->
       <img
-        src="ここにアイコン画像パス"
+        src="./assets/icon.png"
         className="author-icon"
       />
     <div className="author-name-wrapper">
       <!-- 自分の名前 -->
-      <span className="author-name">たーりょう</span>
+      <span className="author-name">たーりょー</span>
       <!-- ひとことコメント(Twitterのbioみたいな) -->
-      <span className="author-bio">にゃん・ぱす〜！！</span>
+      <span className="author-bio">にゃんぱす〜！！</span>
     </div>
   </div>
 </div>
 
 <!-- 以下本文 -->
 
-# にゃん・ぱす〜！！
-にゃん・ぱす〜！！たーりょうです。
+# にゃんぱす〜！！
+にゃんぱす〜！！たーりょーです。
+今回は VOICEVOX とChatGPT を利用して、**にゃんぱす〜！！** することで、
+オタクの夢を叶えていきたいと思います。
 
-## 利用
+## 利用技術紹介
+今回利用したVOICEVOX とChatGPT の説明になります。
 
 - VOICEVOX
-  - 無料で使えるテキスト読み上げソフトだよ。
-  - ずんだもんが有名だよね。
+  - 無料で使えるテキスト読み上げソフト
+  - ずんだもんが有名だよねぇ〜。
 
 - ChatGPT
-  - 今話題だね。乗るしかないね。
-  - このビッグウェーブに!!!!
+  - 今話題の人工知能チャットボット
+  - 乗るしかない。このビッグウェーブに!!!!
 
-# なぜ"にゃんぱす"するのか
-ChatGPT では、アニメキャラや俺様系、おじさん構文など自分好みの役割を着せて
-対話することが出来ます。
-そして VOICEVOX には、声優の小岩井ことりさんを元データとしたNo.7 というアバターがいます。
+# なぜ"にゃんぱす〜！！"するとオタクの夢が叶うのか
+ChatGPT では、アニメキャラや俺様系、おじさん構文など自分好みの役割を与えて対話することが出来ます。
+また VOICEVOX には、声優の小岩井ことりさんを元データとした、No.7 というボイスアバターが存在します。
 
 察しが良い読者の方なら「なるほど〜」と思っているかもしれませんが、
-小岩井ことりさんは「のんのんびより」の宮内れんげちゃんの声を担当しているのです。
-つまり、宮内れんげちゃんと会話するオタクの夢が叶うということです。
+小岩井ことりさんは「のんのんびより」の宮内れんげちゃんの声を担当している声優さんでもあります。
+つまり、**宮内れんげちゃんと会話するオタクの夢が叶う** ということです。
 
 # 大まかな流れ
 
+本記事の大まかな流れとしては、下記の通りになります。
+
+1. ChatGPTを利用して、宮内れんげの口調でテキスト生成できる
+2. VOICEVOX を利用して、小岩井ことりさんの音声データを生成・再生できる
+3. 1.で生成したテキストを、2.での音声データで再生できる
+
+![図1. 大まかな流れ](./assets/Flow.png)
+
+それでは、１つずつ紹介・解説していきます。
+
+
 ## ChatGPT 編
 
-### ChatGPT を利用するために、OpenAI のAPI キーを獲得しよう
-まずは、OpenAI のプラットフォームサイト[^1]でアカウント作成します。
+こちらのChatGPT 編では、大まかな流れで紹介した通り、
+目標を「ChatGPTを利用して、宮内れんげの口調でテキスト生成できる」と定め、
+ChatGPTを利用するまでの手順と、ChatGPTを利用したテキスト生成、
+役割を持たせたテキスト生成を進めていきたいと思います。
+
+### ChatGPTを利用するまでの手順
+
+#### ChatGPT を利用するために、OpenAI のAPI キーを獲得しよう
+まずは、ChatGPT を利用するために、
+OpenAI のプラットフォームサイト[^1]でアカウントを作成します。
 
 ![図1. アカウント作成画面](./assets/Create_account.png)
 
-アカウント作成後にホーム画面に自動的に遷移するので、
-画面右上にある自アイコンから、
-**View API keys** を選択して、
-API キー発行画面に進むことが出来ます。
+アカウントが無事作成することが出来たら、
+ホーム画面に切り替わるので、画面右上にある自アイコンをクリックし、
+その中の **View API keys** を選択して、API キー発行画面に進んでいきましょう。
 
 ![図2. OpenAI ホーム画面](./assets/Home.png)
 
-あとは、**Create new secret key** を選択し、
-API キーの名前を入力することで発行することが出来ます。
-このAPI キーは、後ほど利用するので保存しておきましょう。
+API キー発行画面では、**Create new secret key** を選択し、
+API キーの名前を入力することで OpenAI のAPIキーを発行することが出来ます。
+ここで発行したAPI キーは、後ほど利用するので、忘れずに保存しておきましょう。
 
 ![図3. API キー発行画面](./assets/API_key.png)
 
 [^1]: [https://platform.openai.com/](https://platform.openai.com/)
 
-### API キーを用いて、ChatGPTを動かしてみよう
-次は実際に、先程作成した OpenAI の APIキーを利用して、
-ChatGPTに質問をしてみましょう！
+### ChatGPTを利用したテキスト生成
+先程作成した OpenAI の APIキーを用いて、
+ChatGPTを利用したテキスト生成を行なっていきましょう。
 
 下記のコマンドを実行すると、
-Python で OpenAI を利用するライブラリがインストール出来ます。
+Python で ChatGPT を利用するための、
+OpenAI ライブラリがインストール出来ます。
 
 ```shell
 pip install openai
 ```
 
-実際に ChatGPT に質問するコードを動かしてみましょう。
+ライブラリが無事インストール出来たら、
+実際に ChatGPT を利用してテキスト生成するサンプルコードを動かしてみましょう。
 
 ```python
 import openai
@@ -90,24 +112,35 @@ import openai
 # 作成した OpenAI のAPI キーを入力
 openai.api_key = OPENAI_API_KEY
 
-response = openai.ChatCompletion.create(
-  model = "gpt-3.5-turbo",
-  messages = [{
-    'role': 'user',
-    'content': 'アニメ「のんのんびより」について教えて'
-  }]
-)
+def chat(input_text):
 
-output_text = response['choices'][0]['message']['content']
-print(output_text)
+  # model に利用したいモデルを記述
+  # gpt-3.5-turbo は, GPT-3.5版のChatGPTの最新モデルを利用
+  # 'role': 'user' で, ChatGPT に対して質問することができる
+  response = openai.ChatCompletion.create(
+    model = "gpt-3.5-turbo",
+    messages = [{
+      'role': 'user',
+      'content': input_text
+    }]
+  )
+  output_text = response['choices'][0]['message']['content']
+  print(output_text)
+
+chat('アニメ「のんのんびより」について教えて')
 ```
 
-下記の結果が出力されました。
+以下にサンプルコードの実行結果を載せています。
 
 ![図4. ChatGPT サンプル実行](./assets/chatGPT_sample.png)
 
 
-今度は本題の「宮内れんげ」の役割を与えるサンプルの実行をしてみましょう。
+### 役割を持たせたテキスト生成
+
+それでは本題のChatGPTに、
+「宮内れんげ」の役割を持たせたテキスト生成を行なっていきましょう。
+役割を持たせるのは簡単で、先程のサンプルコードに少し要素を足すことで、
+達成することが出来ます。
 
 ```python
 import openai
@@ -115,45 +148,61 @@ import openai
 # 作成した OpenAI のAPI キーを入力
 openai.api_key = OPENAI_API_KEY
 
-response = openai.ChatCompletion.create(
-  model = "gpt-3.5-turbo",
-  messages = [{
-    'role': 'system',
-    'content': "\
-      あなたは、のんのんびよりの宮内れんげです。\
-      宮内れんげの口調で回答してください。\
-      挨拶は「にゃんぱす〜！」です。\
-      語尾に「〜のん」をつけるのが口癖です。\
+def chat(input_text):
+
+  # model に利用したいモデルを記述
+  # gpt-3.5-turbo は, GPT-3.5版のChatGPTの最新モデルを利用
+  # 'role': 'system' で, 役割を持たせることができる
+  response = openai.ChatCompletion.create(
+    model = "gpt-3.5-turbo",
+    messages = [{
+      'role': 'system',
+      'content': "\
+        あなたは、のんのんびよりの宮内れんげです。\
+        宮内れんげの口調で回答してください。\
+        挨拶は「にゃんぱす〜！」です。\
+        語尾に「〜のん」をつけるのが口癖です。\
       "
     },{
-    'role': 'user',
-    'content': 'アニメ「のんのんびより」について教えて'
-  }]
-)
+      'role': 'user',
+      'content': input_text
+    }]
+  )
+  output_text = response['choices'][0]['message']['content']
+  print(output_text)
 
-output_text = response['choices'][0]['message']['content']
-print(output_text)
+chat('アニメ「のんのんびより」について教えて')
 ```
+
+以下にサンプルコードの実行結果を載せています。
 
 ![図5. 「宮内れんげ」 サンプル実行](./assets/role_sample.png)
 
-う〜〜〜ん。コレじゃない感満載ですが、
-一旦ヨシとして次に進んでいきましょう。
+しっかり「にゃんぱす〜！」と挨拶する、れんげちゃんっぽさを持ったテキストが生成されましたね。
+これは誰がどうみても、れんげちゃんだ（断言したい）。
+
+以上で、ChatGPT編の目標であった、
+「ChatGPTを利用して、宮内れんげの口調でテキスト生成できる」が無事達成できました。
+ばんざーい！ばんざーい！
 
 ## VOICEVOX 編
 
-### VOICEVOX の環境構築
+こちらのVOICEVOX 編では、大まかな流れで紹介した通り、
+目標を「VOICEVOX を利用して、小岩井ことりさんの音声データを生成・再生できる」と定め、
+VOICEVOX を利用するまでの手順と、音声データの生成・再生を進めていきます。
 
-VOICEVOX の利用については２つの方法があります。
+### VOICEVOX を利用するまでの手順
 
-1. VOICEVOX[^3] のサイトからダウンロードして利用
-2. Docker で提供されているコンテナイメージから利用
+VOICEVOX を利用する方法として、以下の２つがあります。
+
+1. VOICEVOX[^3] のサイトからダウンロードして利用する
+2. Docker で提供されているコンテナイメージから利用する
 
 [^3]:[https://voicevox.hiroshiba.jp/](https://voicevox.hiroshiba.jp/)
 
-今回は、Docker で提供されているコンテナイメージを利用しました。
+今回は、Docker で提供されているコンテナイメージを利用することにしました。
 
-###
+### 
 
 ```yaml
 version: '3'
@@ -182,12 +231,16 @@ docker-compose up --build -d
 ```
 
 
-### VOICEVOXを使ってみよう
+### 音声データの生成・再生
 
-まずは、Pythonで VOICEVOXを利用するためのライブラリをインストールしていくよ。
+下記のコマンドを実行すると、
+Python で VOICEVOX を利用するための、
+requests ライブラリと、
+音声データを再生するための、
+pyaudio ライブラリがインストール出来ます。
 
 ```shell
-# 立ち上がったVOICEVOX サーバーとのデータのやり取りに利用
+# VOICEVOX とのデータのやり取りに利用
 pip install requests
 
 # 音声データを再生するために利用
@@ -195,93 +248,94 @@ pip install pyaudio
 ```
 
 ここで注意点ですが、**pyaudio** にハマりポイントがあります。
-ただ単純にインストールすると**portaudio.h** ファイルがないよ。と怒られてしまいます。
-そこで、下記のコマンドを実行してあげましょう。
+インストールのコマンドを実行しても、「**portaudio.h** ファイルがないよ」などのエラーが発生してしまい、
+インストールが失敗することがあります。
+もし失敗してしまったら下記のコマンドを実行することで、
+対処することができる場合があります。
 
 ```shell
 # Homebrew がインストール済みなら下記コマンドを実行
-brw install portaudio
+brew install portaudio
 ```
 
-では、ここからは実際にVOICEVOX を利用していきましょう。
-VOICEVOX にて、音声を読み上げるまでに必要な手順が３つあります。
+ライブラリが無事インストール出来たら、
+実際に VOICEVOX を利用して音声データの生成・再生を行うサンプルを動かしていきましょう。
+サンプルを動かすには、下記の３つの手順で必要になってきます。
 
-1. 音声合成用クエリの作成
-2. 作成したクエリを用いて音声合成し、音声データを作成
-3. 作成した音声データの再生
+1. VOICEVOX を利用した音声合成用クエリの作成
+2. 1.のクエリを用いて VOICEVOX による音声合成
+3. 2.の結果による音声データの再生
 
-それでは１つずつ順番に進めていきましょう。
-まずは、音声合成用クエリの作成です。
-こちらでは、読み上げさせたいテキストと、
-利用したいボイスを入力パラメータとして VOICEVOX サーバと通信することで、
-ボイス毎のイントネーションや、亜ババb
+#### VOICEVOX を利用した音声合成用クエリの作成
+
+読み上げさせたいテキスト**input_text**と、
+利用したいボイス**speaker_type**を入力値とし、
+VOICEVOX とデータのやり取りを行い、音量や、音の高さ、速さなど、
+音声情報を持つ音声合成用クエリを作成することが出来ます。
 
 ```python
-# 音声クエリ用関数
-def post_query(input_text, speaker_type, max_retry = 10):
-    query_params = {"text": input_text, "speaker": speaker_type}
+import requests
 
+# 先程の Dokcer で指定したport番号と合わせる必要があります。
+# http://localhost:port番号
+# VOICEVOXのサイトからダウンロードした場合でもこちらのURLからサーバ通信と出来ます
+base_url = "http://localhost:50021"
 
-    for retry in range(max_retry):
-        res = requests.post(base_url + "/audio_query", 
-                        params = query_params, timeout = (10, 300))
-        if res.status_code == 200:
-            return res.json()
-        time.sleep(1)
-    else:
-        raise ConnectionError("リトライ回数の上限です")
+def post_query(input_text, speaker_type):
+  query_params = {"text": input_text, "speaker": speaker_type}
+  response = requests.post(base_url + "/audio_query", params = query_params)
+  response.json()
 ```
 
-次の手順では、作成したクエリを用いて音声合成し、音声データを作成していきます。
-実際にこちらで音声データが手に入ります。
+#### 音声合成用クエリを用いて VOICEVOX による音声合成
 
+先程作成した音声クエリと、利用したいボイスなどを入力値とし、
+VOICEVOX とデータのやり取りによる音声合成を行い、
+音声データ**voice_response**を取得することが出来ます。
 
 ```python
-# 音声合成用関数
-def post_synthesis(query_res, speaker_type, max_retry = 10):
-    query_params = {"speaker": speaker_type}
-    headers = {"content-type": "application/json"}
-    query_res_json = json.dumps(query_res)
+import requests
+import json
 
-    for retry in range(max_retry):
-        res = requests.post(base_url + "/synthesis", 
-                        data = query_res_json,
-                        headers = headers,
-                        params = query_params, timeout = (10, 300))
-        if res.status_code == 200:
-            return res.content
-        time.sleep(1)
-    else:
-        raise ConnectionError("リトライ回数の上限です")
+def post_synthesis(response, speaker_type):
+  query_params = {"speaker": speaker_type}
+  headers = {"content-type": "application/json"}
+  query_response_json = json.dumps(response)
+
+  voice_response = requests.post(base_url + "/synthesis", 
+    data = query_response_json,
+    headers = headers,
+    params = query_params)
+
+  voice_response.content
 ```
 
-最後に音声データをファイルに保存するのではなく、
-そのままスピーカーから出力するための手順を載せています。
+#### 音声合成結果による音声データの再生
+
+最後に取得した音声データをスピーカーから、
+再生するための手順を紹介します。
 
 ```python
-# 音声再生用関数
-def play_voice(voice_data):
-    p = pyaudio.PyAudio()
-    stream = p.open(
-        format = pyaudio.paInt16,
-        channels = 1,
-        rate = 24000,
-        output = True)
+import pyaudio
+
+def play_voice(voice_response):
+  p_audio = pyaudio.PyAudio()
+  stream = p_audio.open(
+    format = pyaudio.paInt16,
+    channels = 1,
+    rate = 24000,
+    output = True)
     
-    time.sleep(0.8)
-
-    stream.write(voice_data)
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
+  stream.write(voice_response.content)
+  stream.stop_stream()
+  stream.close()
+  p_audio.terminate()
 ```
 
-以上の３つの手順により、
-順番よく実行させてあげることにより、
-好きなテキストを好きなボイスで喋らすことができるようになります。
+以上の３つの手順を順番よく実行させてあげることで、
+好きなテキストを好きなボイスで再生させることができます。
 
 ```python
-# サンプル実行
 def sample():
     input_text = "技術書典はじまった〜のん。"
     speaker_type = 29
@@ -290,14 +344,59 @@ def sample():
     play_voice(voice_data)
 ```
 
-これで無事に音声が流れるはずです！！！！
+ちなみに VOICEVOX サーバで好きなボイスを利用するための **speaker_type** については、
+VOICEVOX 起動中に、 **http://localhost:50021/speakers** をブラウザからアクセスすることで、
+値の確認を行うことが出来ます。
+
+ちなみに**宮内れんげ役の小岩井ことりさん**がボイスを担当している **No.7** のボイスは、
+**29** を指定することで利用できます。
+
+以上で、VOICEVOX 編の目標であった、
+「VOICEVOX を利用して、小岩井ことりさんの音声データを生成・再生できる」が無事達成できました。
+ばんざーい！ばんざーい！
+
 
 ## ChatGPT と VOICEVOX の合体編
 
-では、今までの成果をまとめてあげましょう。
-ChatGPT で生成したテキストをそのまま、
-VOICEVOX で喋らせたい入力テキストとして渡してあげることで、
-念願のれんげちゃんとお話しすることが出来ます。
+それでは、今までの成果をまとめてみましょう。
+まずはChatGPT 編での目標であった、
+「ChatGPTを利用して、宮内れんげの口調でテキスト生成できる」によって生成されたテキストを、
+VOICEVOX 編での目標であった、
+VOICEVOX を利用して、小岩井ことりさんの音声データを生成・再生できる」と合体させてあげることで、
+本記事の目標であった、**宮内れんげちゃんと会話するオタクの夢が叶う** を達成していきましょう。
 
-# 乾燥した乾燥
-ただ乾燥している。
+```python
+import openai
+
+from chatgpt_sample import chat
+from voicevox_sample import post_query, post_synthesis, play_voice
+
+# 作成した OpenAI のAPI キーを入力
+openai.api_key = OPENAI_API_KEY
+
+def main():
+    input_text = "自己紹介してください。"
+    speaker_type = 29
+    chatgpt_text = chat(input_text)
+    response = post_query(chatgpt_text, speaker_type)
+    voice_data = post_synthesis(response, speaker_type)
+    play_voice(voice_data)
+  
+main()
+```
+
+上記の実行結果により、**宮内れんげちゃんと会話するオタクの夢が叶う** が達成できました！！！
+
+# 感想
+今回は、**宮内れんげちゃんと会話するオタクの夢が叶う** が無事達成することができました。(拍手)
+しかし、まだまだ改良の余地は残されています。
+
+- こちらの入力を音声入力にして会話感の向上！！
+- 繰り返しによる対話感の向上！！
+- ChatGPT による役割が甘い部分がある！！
+- 絵やアバターを一緒に表示させて動かしたい！！
+
+などなど、達成したいことがまだまだ出てきますので、
+これからも継続して夢を追っていきます！！！
+
+# オタクの夢は終わらねぇぇ！！！
