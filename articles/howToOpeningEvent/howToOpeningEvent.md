@@ -17,7 +17,7 @@ author: "kazuki19992"
       <!-- 自分の名前 -->
       <span className="author-name">カズ之助 - @kazuki19992</span>
       <!-- ひとことコメントor記事概要 -->
-      <span className="author-bio">逆張りクソめんどオタクなので鬼滅の刃まだ見てなかったワ</span>
+      <span className="author-bio">「鬼滅の刃見なきゃなぁ」って5億年言ってる</span>
     </div>
   </div>
 </div>
@@ -212,7 +212,7 @@ connpassとかに載ってるイベントに参加したことはあれど、イ
 
 <hr class="page-wrap" />
 
-#### FIgmaでロゴを作ってみよう
+#### Figmaでロゴを作ってみよう
 
 筆者は普段Adobe XDでロゴを作っていますが、Adobe XDが今後どうなるかわからないため、今回は[Figma (https://www.figma.com/)](https://www.figma.com/)でロゴを作る例をご紹介します。
 
