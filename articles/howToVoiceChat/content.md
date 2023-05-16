@@ -69,11 +69,13 @@ ChatGPT では、アニメキャラや俺様系、おじさん構文など自分
 ChatGPTを利用するまでの手順と、ChatGPTを利用したテキスト生成、
 役割を持たせたテキスト生成を進めていきたいと思います。
 
+<hr class="page-wrap" />
+
 ### ChatGPTを利用するまでの手順
 
 #### ChatGPT を利用するために、OpenAI のAPI キーを獲得しよう
 まずは、ChatGPT を利用するために、
-OpenAI のプラットフォームサイト[^1]でアカウントを作成します。
+OpenAI のプラットフォームサイト<span class="footnote">https://platform.openai.com/</span>でアカウントを作成します。
 
 ![図1. アカウント作成画面](./assets/Create_account.png)
 
@@ -88,8 +90,6 @@ API キーの名前を入力することで OpenAI のAPIキーを発行する�
 ここで発行したAPI キーは、後ほど利用するので、忘れずに保存しておきましょう。
 
 ![図3. API キー発行画面](./assets/API_key.png)
-
-[^1]: [https://platform.openai.com/](https://platform.openai.com/)
 
 ### ChatGPTを利用したテキスト生成
 先程作成した OpenAI の APIキーを用いて、
@@ -195,10 +195,8 @@ VOICEVOX を利用するまでの手順と、音声データの生成・再生�
 
 VOICEVOX を利用する方法として、以下の２つがあります。
 
-1. VOICEVOX[^3] のサイトからダウンロードして利用する
+1. VOICEVOX <span class="footnote">https://voicevox.hiroshiba.jp/</span> のサイトからダウンロードして利用する
 2. Docker で提供されているコンテナイメージから利用する
-
-[^3]:[https://voicevox.hiroshiba.jp/](https://voicevox.hiroshiba.jp/)
 
 今回は、Docker で提供されているコンテナイメージを利用することにしました。
 
@@ -399,4 +397,4 @@ main()
 などなど、達成したいことがまだまだ出てきますので、
 これからも継続して夢を追っていきます！！！
 
-# オタクの夢は終わらねぇぇ！！！
+<p style='font-size:20pt; font-weight: 700;'>オタクの夢は終わらねぇぇ！！！</p>
