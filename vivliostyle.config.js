@@ -17,6 +17,7 @@ module.exports = {
     "howToIosDevelop/01.md",
     "securityIntelligenceExaminer/securityIntelligenceExaminer.md",
     "Muranaka/01.md",
+    "howToVoiceChat/content.md",
     // // 第1部
     // {
     //   // 第1部の扉ページ
