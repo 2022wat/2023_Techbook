@@ -71,7 +71,7 @@ yarn init -y
 ```
 
 ```sh
-yarn add -D typescript @types/node ts-node
+yarn add  typescript @types/node ts-node
 ```
 
 ```sh
@@ -94,7 +94,7 @@ package.jsonに以下を追加
 後で使うパッケージももう入れときましょう。
 
 ``` 
-yarn add ts-node dotenv discord.js kuromoji @types/kuromoji
+yarn add dotenv discord.js kuromoji @types/kuromoji
 ```
 
 これで`yarn start`すれば`src/index.ts`が実行されるようになりました！
@@ -128,6 +128,8 @@ client.on('messageCreate', message => {
 ここでは1.でメモしておいたボットのトークンを.envファイルに書いています。
 
 ### 4. メッセージ内にNGワードが入っていないかを検知する
+
+以下のコードはスペースの関係で改行しています。お使いの際はよしなに不要な改行を直してください。
 
 ```typescript
 import kuromoji from 'kuromoji';
@@ -285,9 +287,6 @@ RUN yarn install --production=false
 # Copy application code
 COPY --link . .
 
-# Remove development dependencies
-RUN yarn install --production=true
-
 # Build application
 RUN yarn run build
 
@@ -302,7 +301,7 @@ COPY --from=build /app /app
 CMD [ "yarn", "run", "start" ]
 ```
 
-書き換える部分は以下の3点です。
+書き換える部分は以下の2点です。
 
 1. `ARG YARN_VERSION=1.22.19`と
 
@@ -315,9 +314,6 @@ CMD [ "yarn", "run", "start" ]
 
    - パッケージ`python-is-python3`が見つからずエラーになります。FlyのQ&Aで`python`に書き換えたらいいよ！と書かれていたのでそのように対処しましたが、なぜそうなるのかまでは書かれておらず、不明です…
 
-3. `RUN yarn install --production=true`を削除
-
-   - `devDependencies`内にtypescriptが入っているため、この後`tsc`が動かなくなってしまいます…
 
 執筆当時(2023/05/07)はこれで動きましたが、今後のアップデートによって別の問題が発生する可能性があるので、そのときは適宜FlyのQ&Aを探したりググってください。FlyのQ&Aはつまずくポイントが大体質問されている上に、ほぼ(今の所100%)解決策が答えられており、私のようなクソザコエンジニアにとても優しかったです。
 

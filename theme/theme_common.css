@@ -204,6 +204,10 @@ p {
   hanging-punctuation: first;
 }
 
+strong {
+  font-family: "BIZ UDPShinMGo Medium"
+}
+
 pre {
   margin: 1.5rem 0;
   box-decoration-break: clone;
