@@ -17,6 +17,7 @@ module.exports = {
     "howToIosDevelop/01.md",
     "securityIntelligenceExaminer/securityIntelligenceExaminer.md",
     "Muranaka/01.md",
+    "howToVoiceChat/content.md",
 
     // あとがき、奥付
     "colophon.html"
