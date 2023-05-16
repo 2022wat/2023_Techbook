@@ -41,7 +41,7 @@ author: "たーりょー"
   - 今話題の人工知能チャットボット
   - 乗るしかない。このビッグウェーブに!!!!
 
-# なぜ"にゃんぱす〜！！"するとオタクの夢が叶うのか
+# なぜ"にゃんぱす〜！！"すると夢が叶うのか
 ChatGPT では、アニメキャラや俺様系、おじさん構文など自分好みの役割を与えて対話することが出来ます。
 また VOICEVOX には、声優の小岩井ことりさんを元データとした、No.7 というボイスアバターが存在します。
 
@@ -276,12 +276,14 @@ import requests
 
 # 先程の Dokcer で指定したport番号と合わせる必要があります。
 # http://localhost:port番号
-# VOICEVOXのサイトからダウンロードした場合でもこちらのURLからサーバ通信と出来ます
+# サイトからダウンロードした場合でも、このURLでサーバ通信が出来ます
 base_url = "http://localhost:50021"
 
 def post_query(input_text, speaker_type):
-  query_params = {"text": input_text, "speaker": speaker_type}
-  response = requests.post(base_url + "/audio_query", params = query_params)
+  query_params = {"text": input_text,
+    "speaker": speaker_type}
+  response = requests.post(base_url + "/audio_query",
+    params = query_params)
   response.json()
 ```
 
@@ -367,7 +369,9 @@ VOICEVOX を利用して、小岩井ことりさんの音声データを生成�
 import openai
 
 from chatgpt_sample import chat
-from voicevox_sample import post_query, post_synthesis, play_voice
+from voicevox_sample import post_query
+from voicevox_sample import post_synthesis
+from voicevox_sample import play_voice
 
 # 作成した OpenAI のAPI キーを入力
 openai.api_key = OPENAI_API_KEY
